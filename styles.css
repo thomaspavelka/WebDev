@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.result-card {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.result-container {
+    display: flex;
+    width: 600px;
+    /* Adjust the width as needed */
+}
+
+.result {
+    background: linear-gradient(to bottom, #6c63ff, #4a47b0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result h2 {
+    margin: 0 0 10px;
+}
+
+.score-circle {
+    background: linear-gradient(to bottom, #5348d5, #3b33a2);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.total {
+    font-size: 14px;
+}
+
+.result-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.description {
+    font-size: 14px;
+    margin: 0;
+}
+
+.summary {
+    padding: 20px;
+    width: 50%;
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summary h2 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    /* Increase margin for better spacing */
+}
+
+.summary-box {
+    background: #f8f8ff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 24px;
+    /* Adjust the size of the icons as needed */
+    height: 24px;
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+.item-label {
+    font-weight: bold;
+    flex-grow: 1;
+    /* Take up remaining space between icon and score */
+}
+
+.item-score {
+    font-weight: bold;
+}
+
+.continue-btn {
+    background: linear-gradient(to right, #6c63ff, #4a47b0);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(to right, #5348d5, #3b33a2);
+}
