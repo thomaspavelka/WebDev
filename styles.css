@@ -165,7 +165,6 @@ body {
     color: hsl(234, 85%, 45%);
 }
 
-
 .continue-btn {
     background: hsl(224, 30%, 27%);
     color: white;
@@ -177,8 +176,30 @@ body {
     font-size: 16px;
     margin-top: 10px;
     font-weight: 600;
+    font-family: 'Hanken Grotesk';
 }
 
 .continue-btn:hover {
+    font-family: 'Hanken Grotesk';
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .result-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .result, .summary {
+        width: 100%;
+    }
+
+    .result {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .summary {
+        border-radius: 0 0 30px 30px;
+    }
 }
